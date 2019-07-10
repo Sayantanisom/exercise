@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML5</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>HTML5 Input</h1>
+
+        <p><strong>Number</strong></p>
+        <div>
+            <form action="echo.php" method="post">
+                <p>
+                    Number:
+                    <br /><input type="number" name="number" />
+                </p>
+                <p>Range from 1 to 10, increments of 1:<br />
+                    <input type="range" min="1" max="10" step="1"value="5"  name="range" />
+                </p>
+                <p><input type="submit" /></p>
+            </form>
+        </div>
+
+        <p><strong>Dates and Time</strong></p>
+        <form action="echo.php" method="post">
+            <fieldset>
+                <legend>Date and Time</legend>
+                <p>Date</p>
+                <p><input type="date" name="my_date" /></p>
+
+                <p>Datetime</p>
+                <p><input type="datetime-local" name="my_datetime" /></p>
+
+                <p>Time</p>
+                <p>15 min increments: <input type="time" name="my_time_15" step="900" value="12:00" /></p>
+                <p>1 min increments: <input type="time" name="my_time_1" step="60" value="12:00" /></p>
+                <p>1 second increments: <input type="time" name="my_time_1s" step="1" value="12:00" /></p>
+            </fieldset>
+            <p><input type="submit" /></p>
+        </form>
+    </body>
+</html>
